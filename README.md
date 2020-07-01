@@ -21,13 +21,13 @@ Pokestore
     - react
     - typescript
 
-    🎥 run aplication
+##     🎥 run aplication
 
     - yarn install
     - yarn start
 
 ## ✅ Accepted Commits
-
+    
 - `:collision:` A new feature
 - `:package:` A new package
 - `:hammer:` Changes to the build process or auxiliary tools
@@ -40,6 +40,7 @@ Pokestore
 - `:building_construction:` Work in progress
 - `:heavy_plus_sign:` Ci related changes
 - `:white_check_mark:` Adding missing tests
+- `:eyeglasses:` Changes that do not affect the meaning of the code\n            (white-space, formatting, missing semi-colons, etc)
 
 ----
 
