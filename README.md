@@ -4,11 +4,11 @@ Pokestore
 
 </h1>
 
-*descrição rápida sobre o sistema*
+*challenge created by GAMA ACADEMY, to build a web application. The goal is to develop a pokestore, that is, a website that sells pokemon*
 
 <p align="center">
 	<p align="center">    
-	 <img src="https://img.shields.io/badge/label-MESSAGE-RED.svg"/>    
+	 <img src="https://img.shields.io/badge/gledson-GITHUB-RED.svg"/>    
 	</p>
  </p>
 
