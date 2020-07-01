@@ -29,7 +29,7 @@ module.exports = {
                 ':trophy: perf',
                 ':pencil2: refactor',
                 ':back: revert',
-                ':lipstick: style',
+                ':eyeglasses: style',
                 ':white_check_mark: test',
                 ':x: delete'
             ],

@@ -9,7 +9,7 @@ module.exports = {
         { value: ':beetle: fix', name: 'fix:      A bug fix' },
         { value: ':book: docs', name: 'docs:     Documentation only changes' },
         {
-            value: ':lipstick: style',
+            value: ':eyeglasses: style',
             name:
                 'style:    Changes that do not affect the meaning of the code\n            (white-space, formatting, missing semi-colons, etc)',
         },
