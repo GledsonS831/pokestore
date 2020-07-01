@@ -33,11 +33,13 @@ Pokestore
 - `:hammer:` Changes to the build process or auxiliary tools
 - `:pencil2:` A code change that neither fixes a bug or adds a feature
 - `:trophy:` A code change that improves performance
-- `:wrench:` A bug fix
-- `:beetle:` An unresolved bug
-- `:x:` delete file
+- `:beetle:` A bug fix
+- `:x:` Deleted one or more files
 - `:back:` Revert to a commit
 - `:book:` Documentation only changes
+- `:building_construction:` Work in progress
+- `:heavy_plus_sign:` Ci related changes
+- `:white_check_mark:` Adding missing tests
 
 ----
 
