@@ -1,17 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import api from './services/api';
 
-function App() {
-  /* const [pokemon, pokemonState] = useState<string>(); */
-  
-  useEffect(() =>{
-    api.get('ditto').then((res) =>{
-      console.log(res.data)
-    })
-  }, [])
+import Routes from './routes/routes';
 
+function App() {  
   return (
-    <h1>a</h1>
+    <Routes />
   );
 }
 
