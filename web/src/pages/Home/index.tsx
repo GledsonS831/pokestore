@@ -1,12 +1,14 @@
 import React from 'react';
 
-import Pokemon from '../../components/Pokemon';
-
+import PokemonLogo from '../../components/PokemonLogo';
+import Search from '../../components/Search';
 const Home = () => {
     return (
-    <button>
-        <Pokemon name="pikachu" />
-    </button>)
+        <>
+            <PokemonLogo />
+            <Search />
+        </>
+    )
 
 }
 

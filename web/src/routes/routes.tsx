@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Route, BrowserRouter} from 'react-router-dom';
+import {BrowserRouter} from 'react-router-dom';
 
 import HomeRoute from './Home';
 
