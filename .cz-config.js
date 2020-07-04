@@ -32,7 +32,7 @@ module.exports = {
             name:
                 'refactor: A code change that neither fixes a bug nor adds a feature',
         },
-        { value: ':x:', name: 'delete:    deleted one or more files' }
+        { value: ':x: delete', name: 'delete:    deleted one or more files' }
     ],
 
     scopes: [
