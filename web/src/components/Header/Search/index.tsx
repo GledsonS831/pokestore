@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import * as St from './styles';
-import { global } from '../../styles/themes'
+import { global } from '../../../styles/themes'
 import styled from 'styled-components';
 
 interface SearchProps {

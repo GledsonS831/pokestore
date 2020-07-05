@@ -2,9 +2,11 @@ import React from 'react';
 import * as St from './styles';
 import Item from '../../../assets/itemCart/countItems.svg';
 
-const CountItems = () => {
+const CountItems: React.FC = () => {
     return (
-        <St.ItemCount src={Item} />
+        <>
+            <St.ItemCount src={Item} />
+        </>
     )
 }
 

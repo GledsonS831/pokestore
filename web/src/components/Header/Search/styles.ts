@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 import styled, { keyframes } from 'styled-components'
-import { global } from '../../styles/themes'
+import { global } from '../../../styles/themes'
 import { FiSearch } from 'react-icons/fi';
 
 interface SearchButtonProps {
