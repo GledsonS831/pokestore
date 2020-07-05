@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Search from '../../../../../src/components/Search';
+import Search from '../../../../../src/components/Header/Search';
 
 import { storiesOf } from '@storybook/react';
 
