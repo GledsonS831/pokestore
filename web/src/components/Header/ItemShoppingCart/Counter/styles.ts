@@ -6,7 +6,7 @@ export const CountSpan = styled.span`
     font-size: 15px;
     position: absolute;
     margin-left: 18px;
-    padding-bottom: 7px;
+    padding-bottom: 8px;
     font-face {
         font-family: modal;
         src: url(${global.fonts.modal});

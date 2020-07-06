@@ -9,9 +9,11 @@ import Counter from './Counter';
 const ItemShoppingCart: React.FC = () => {
     return (
         <St.Container>
-            <ItemCart />
-            <CountItems />
-            <Counter />
+            <St.Content>
+                <ItemCart />
+                <CountItems />
+                <Counter />
+            </St.Content>
         </St.Container>
     )
 }

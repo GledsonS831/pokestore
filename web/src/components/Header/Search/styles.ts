@@ -9,8 +9,9 @@ interface SearchButtonProps {
 
 export const Container = styled.div`
     display: flex;
-    width: 560px;
+    width: 500px;
     height: 40px;
+    margin-left: 250px;
 `
 
 export const SearchBar = styled.input`
