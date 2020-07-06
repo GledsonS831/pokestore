@@ -3,7 +3,8 @@ export const global = {
         main: '#2C1266',
         secondary: '#ff0557',
         shadowPink: '#87148f',
-        background: 'white'
+        background: 'white',
+        shadowItem: '#008c62'
     },
     fonts: {
         ubuntu: '../assets/Fonts/UbuntuCondensed-Regular.ttf',
