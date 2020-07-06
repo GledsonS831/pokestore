@@ -1,11 +1,10 @@
 import React from 'react';
 
-import PokemonLogo from '../../components/Header/PokemonLogo';
-import Search from '../../components/Header/Search';
+import Header from '../../components/Header';
 const Home = () => {
     return (
         <>
-            <PokemonLogo />
+            <Header />
         </>
     )
 
