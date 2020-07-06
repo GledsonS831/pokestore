@@ -7,8 +7,8 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-
     :hover{
+        cursor: pointer;
         height: 74px;
         background-color: ${global.colors.shadowItem};
     }
