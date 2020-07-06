@@ -1,6 +1,6 @@
 import React from 'react';
 
-import PokemonLogo from '../../../../../src/components/Header/PokemonLogo';
+import PokemonLogo from '../../../../src/components/Header/PokemonLogo';
 
 import { storiesOf } from '@storybook/react';
 
