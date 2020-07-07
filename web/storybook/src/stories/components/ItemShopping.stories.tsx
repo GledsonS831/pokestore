@@ -1,7 +1,7 @@
 import React from 'react';
 
-import ItemShoppingCart from '../../../../src/components/Header/ItemShoppingCart';
+import ItemShopping from '../../../../src/components/ShoppingList/ItemShopping';
 
 import { storiesOf } from '@storybook/react';
 
-storiesOf('ItemShoppingCart', module).add('Cart', () => <ItemShoppingCart />)
+storiesOf('ItemShopping', module).add('Container', () => <ItemShopping />)
