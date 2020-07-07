@@ -20,6 +20,17 @@ export const Container = styled.div`
     transition: box-shadow 0.35s;
 `
 
+export const BuyButton = styled.button<ContentProps>`
+    width: 100%;
+    margin: 0;
+    border: none;
+    background-color: ${global.colors.background};
+    :hover{
+        background-color: ${global.colors.main};
+        color: ${global.colors.background};
+    }
+`
+
 export const Content = styled.div<ContentProps>`
     display: flex;
     align-items: center;
@@ -36,8 +47,6 @@ export const Content = styled.div<ContentProps>`
         if (contentType === 'buy') return `
             :hover{
                 box-shadow: 10px 10px ${global.colors.shadowPink};
-                background-color: ${global.colors.main};
-                color: white;
                 transition: box-shadow 0.35s;
             }
         `
@@ -84,10 +93,12 @@ export const PokemonDetailText = styled.p<PokemonDetailTextProps>`
         if (textType === 'priceDividided') return global.colors.priceDividided;
     }};
 
-    text-decoration: ${({ textType }) => {
+    :hover{
+        text-decoration: ${({ textType }) => {
         if (textType === 'description') return 'underline';
         return 'none';
     }};
+    }
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     

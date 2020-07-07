@@ -11,8 +11,8 @@ const ItemShopping: React.FC = () => {
 
             <St.Content>
                 <St.PokemonDetailText textType="description">
-                    Name: pikachu <br/>
-                    Type: eletric <br/>
+                    Name: pikachu <br />
+                    Type: eletric <br />
                     Abilities: run
                 </St.PokemonDetailText>
 
@@ -28,9 +28,11 @@ const ItemShopping: React.FC = () => {
             </St.Content>
 
             <St.Content contentType="buy">
-                <St.PokemonDetailText textType="buy">
-                    Comprar
-                </St.PokemonDetailText>
+                <St.BuyButton>
+                    <St.PokemonDetailText textType="buy">
+                        Comprar
+                    </St.PokemonDetailText>
+                </St.BuyButton>
             </St.Content>
 
         </St.Container>
