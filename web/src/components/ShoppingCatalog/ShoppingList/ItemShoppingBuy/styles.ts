@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { global } from '../../../styles/themes';
+import { global } from '../../../../styles/themes';
 
 interface ContentProps {
     contentType?: string;
@@ -13,8 +13,12 @@ export const Container = styled.div`
     width: 220px;
     display: flex;
     flex-direction: column;
+    margin-right: 17px;
+    
     :hover{
         border: 2px solid ${global.colors.shadowBuy};
+        margin-right: 13px;
+        margin-top: -4px;
         box-shadow: 15px 15px ${global.colors.shadowBuy};
     }
     transition: box-shadow 0.35s;
@@ -29,6 +33,7 @@ export const BuyButton = styled.button<ContentProps>`
         background-color: ${global.colors.main};
         color: ${global.colors.background};
     }
+    outline: none;
 `
 
 export const Content = styled.div<ContentProps>`
@@ -67,11 +72,12 @@ export const PokemonDetailText = styled.p<PokemonDetailTextProps>`
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     /* border: 1px solid black; */
 
 
     ${({ textType }) => {
-        if (textType === 'price' || textType === 'priceDividided') return 'margin: 0px;';
+        if (textType === 'price' || textType === 'priceDividided') return 'margin: 5px;';
         if (textType === 'description') return 'margin: 5px;'
         return null;
     }}
