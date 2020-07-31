@@ -1,47 +1,55 @@
+<!-- 
+<p align="center">    
+ <img src="" width=200px height=200px />    
+</p> -->
+
 <h1 align="center">
 
 Pokestore
 
 </h1>
 
-*challenge created by GAMA ACADEMY, to build a web application. The goal is to develop a pokestore, that is, a website that sells pokemon*
-
 <p align="center">
 	<p align="center">    
-	 <img src="https://img.shields.io/badge/gledson-GITHUB-RED.svg"/>    
+	 <img src="https://img.shields.io/badge/always-LEARNING-RED.svg"/>
+	 <img src="https://img.shields.io/github/stars/GledsonS831/twitter-resonsive-react?style=social"/>    
+	 <img src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FgledsonDev"/>
 	</p>
  </p>
 
-## 💻 Technology
+## 📚 Description 
+- challenge created by <a src="www.gama.academy/"> <span style="color: green">GAMA ACADEMY</span> </a>, to build a web application. The goal is to develop a pokestore, that is, a website that sells pokemon*
 
-- 📁 web
-    
-    📦 package(s)
+## ✨ Feature
+- This project do you can to buy pokemon
+- see your chooses in lateral shopping cart from main page
+- To receive notification for completing the purchase
 
-    - react
-    - typescript
-
-##     🎥 run aplication
-
-    - yarn install
-    - yarn start
+## 🚀 Getting started  
+- run yarn and download Dependencies
+- run yarn start in folder web
 
 ## ✅ Accepted Commits
-    
+
 - `:collision:` A new feature
 - `:package:` A new package
 - `:hammer:` Changes to the build process or auxiliary tools
 - `:pencil2:` A code change that neither fixes a bug or adds a feature
 - `:trophy:` A code change that improves performance
-- `:beetle:` A bug fix
-- `:x:` Deleted one or more files
+- `:wrench:` A bug fix
+- `:beetle:` An unresolved bug
+- `:x:` delete file
 - `:back:` Revert to a commit
 - `:book:` Documentation only changes
-- `:building_construction:` Work in progress
-- `:heavy_plus_sign:` Ci related changes
-- `:white_check_mark:` Adding missing tests
-- `:eyeglasses:` Changes that do not affect the meaning of the code            (white-space, formatting, missing semi-colons, etc)
 
-----
+## 📝 Tests  
+- There's not
 
-i just love creating codes 💜
+## 🔒 License
+MIT
+
+---
+
+<p align="center">
+	i love creating codes 💜
+</p>
