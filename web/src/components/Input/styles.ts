@@ -11,6 +11,11 @@ export const Search = styled.input`
   border: 1px solid var(--color-shadow);
   border-right: none;
   color: var(--color-shadowPink);
+  @font-face {
+    font-family: ubuntu;
+    src: url("../../assets/Fonts/UbuntuCondensed-Regular.ttf");
+  }
+  font-family: ubuntu;
   :focus,
   :active {
     outline: none;
