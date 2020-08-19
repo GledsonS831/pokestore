@@ -1,15 +1,15 @@
 export const global = {
-    colors: {
-        main: '#2C1266',
-        secondary: '#ff0557',
-        shadowPink: '#87148f',
-        background: 'white',
-        shadowItem: '#008c62',
-        priceDividided: '#5F6368',
-        shadowBuy: 'rgba(205, 199, 218, 0.45)'
-    },
-    fonts: {
-        ubuntu: '../assets/Fonts/UbuntuCondensed-Regular.ttf',
-        modal: '../assets/Fonts/Modak-Regular.ttf'
-    }
-}
+  colors: {
+    main: "#2C1266",
+    secondary: "#E83E8C",
+    shadowPink: "#871390",
+    background: "white",
+    shadowItem: "#28A745",
+    priceDividided: "#5F6368",
+    shadowBuy: "#C4BFCE",
+  },
+  fonts: {
+    ubuntu: "../assets/Fonts/UbuntuCondensed-Regular.ttf",
+    modal: "../assets/Fonts/Modak-Regular.ttf",
+  },
+};

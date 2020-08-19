@@ -1,0 +1,17 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+:root {
+  --color-main: #2c1266;
+  --color-secundary: #e83e8c;
+  --color-shadow: #c4bfce;
+  --color-shadowPink: #871390;
+}

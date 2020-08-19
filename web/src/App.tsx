@@ -1,12 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import api from './services/api';
-import './App.css'
-import Routes from './routes/routes';
+import React from "react";
 
-function App() {
+import "./styles/App.css";
+import AppProvider from "./AppProvider";
+import Routes from "./routes/routes";
+
+const App: React.FC = () => {
   return (
-    <Routes />
+    <AppProvider>
+      <Routes />
+    </AppProvider>
   );
-}
+};
 
 export default App;
