@@ -35,14 +35,4 @@ export const CartShoppingIcon = styled(FiShoppingCart)`
   color: var(--color-main);
 `;
 
-export const ItemsAmountContainer = styled.div`
-  width: 50px;
-  height: 50px;
-  display: grid;
-`;
 
-export const ItemsAmountContent = styled.div`
-  width: 25px;
-  height: 25px;
-  background: var(--color-secundary);
-`;
