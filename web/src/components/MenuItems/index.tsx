@@ -9,7 +9,7 @@ const MenuItems: React.FC = () => {
         <St.TextDescription>Lista de Produtos:</St.TextDescription>
       </St.Description>
       <St.ItemsList>
-        <Product />
+        <Product pokemonName="pikachu" />
       </St.ItemsList>
     </St.Container>
   );
