@@ -9,11 +9,8 @@ interface ProductProps {
 }
 
 function handlePrice() {
-  return Math.floor(Math.random() * (1000 - 100) + 100);
-}
-
-function handlePriceDivided(price: number) {
-  return Math.floor(price / 10 + 10);
+  var price = Math.random() * (1000 - 200) + 200;
+  return [Math.floor(price), Math.floor(price / 10 + 10)];
 }
 
 const Product: React.FC<ProductProps> = ({ pokemonName }) => {
@@ -24,18 +21,22 @@ const Product: React.FC<ProductProps> = ({ pokemonName }) => {
   const [priceDivided, setPriceDivided] = useState<number>(0);
 
   useEffect(() => {
-    api.get(pokemonName).then((data) => {
-      /* console.log(data.data.sprites.front_default); */
-      setImage(data.data.sprites.front_default);
-      setType(data.data.types[0].type.name);
-      setAbility(data.data.abilities[1].ability.name);
-    });
-  }, [pokemonName]);
+    async function fetchData() {
+      api.get(pokemonName).then((data) => {
+        /* console.log(data.data.sprites.front_default); */
+        setImage(data.data.sprites.front_default);
+        setType(data.data.types[0].type.name);
+        setAbility(data.data.abilities[1].ability.name);
+      });
+    }
+    fetchData();
+  });
 
   useEffect(() => {
-    setPrice(handlePrice());
-    setPriceDivided(handlePriceDivided(price));
-  }, [price]);
+    var value = handlePrice();
+    setPrice(value[0]);
+    setPriceDivided(value[1]);
+  }, []);
 
   return (
     <St.Container>
