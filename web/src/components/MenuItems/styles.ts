@@ -26,5 +26,4 @@ export const TextDescription = styled.p`
 export const ItemsList = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  justify-content: space-evenly;
 `;
