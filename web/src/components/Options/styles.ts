@@ -5,10 +5,8 @@ export const Container = styled.div`
 
   background: #2c1266;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  padding-left: 300px;
-  padding-right: 300px;
 `;
 
 export const linkContainer = styled.a``;
@@ -23,9 +21,7 @@ export const Button = styled.div`
   :hover {
     background: var(--color-greenEffect);
     margin-bottom: 20px;
-    :nth-child(1) {
-      padding-top: 20px;
-    }
+    padding-top: 20px;
   }
   transition-duration: 0.3s;
 `;
@@ -38,4 +34,6 @@ export const Text = styled.p`
   }
   font-family: Ubuntu;
   font-size: 24px;
+  padding-left: 40px;
+  padding-right: 40px;
 `;
