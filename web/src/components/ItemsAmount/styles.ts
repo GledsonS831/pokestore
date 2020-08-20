@@ -27,6 +27,7 @@ export const ItemsAmountContent = styled.div`
   background: var(--color-secundary);
   border-radius: 100%;
   grid-area: area2;
+  cursor: pointer;
 `;
 
 export const Amount = styled.span`
