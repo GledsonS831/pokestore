@@ -21,16 +21,12 @@ const Product: React.FC<ProductProps> = ({ pokemonName }) => {
   const [priceDivided, setPriceDivided] = useState<number>(0);
 
   useEffect(() => {
-    async function fetchData() {
-      api.get(pokemonName).then((data) => {
-        /* console.log(data.data.sprites.front_default); */
-        setImage(data.data.sprites.front_default);
-        setType(data.data.types[0].type.name);
-        setAbility(data.data.abilities[1].ability.name);
-      });
-    }
-    fetchData();
-  });
+    api.get(pokemonName).then((data) => {
+      setImage(data.data.sprites.front_default);
+      setType(data.data.types[0].type.name);
+      setAbility(data.data.abilities[0].ability.name);
+    });
+  }, [pokemonName]);
 
   useEffect(() => {
     var value = handlePrice();

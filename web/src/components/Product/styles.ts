@@ -6,11 +6,12 @@ export const Container = styled.div`
   width: 194px;
   height: 339px;
   flex-direction: column;
-
+  margin-bottom: 2px;
   :hover {
     border: 2px solid var(--color-shadow);
     margin-left: -2px;
     margin-top: -2px;
+    margin-bottom: 0px;
     box-shadow: 12px 12px var(--color-shadow);
   }
   transition: box-shadow 0.4s;
