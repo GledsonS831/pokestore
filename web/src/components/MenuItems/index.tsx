@@ -17,7 +17,8 @@ const MenuItems: React.FC = () => {
     });
   }, []);
 
-  function handlePokemonList(): any {
+  function handlePokemonList(): JSX.Element | JSX.Element[] {
+    console.log(pokemonName);
     return pokemonName.length === 0 ? (
       listPokemon.map((item) => <Product pokemonName={item} />)
     ) : (
@@ -31,7 +32,7 @@ const MenuItems: React.FC = () => {
         <St.TextDescription>
           {pokemonName.length === 0
             ? "Lista de produtos recomendados"
-            : pokemonName}
+            : `Pokémon escolhido: ${pokemonName}`}
         </St.TextDescription>
       </St.Description>
       <St.ItemsList>{handlePokemonList()}</St.ItemsList>

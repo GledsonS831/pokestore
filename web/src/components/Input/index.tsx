@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import * as St from "./styles";
 import Button from "components/Button";
 
-
 const Input: React.FC = () => {
   const [valueInput, setValueInput] = useState<string>("");
 
