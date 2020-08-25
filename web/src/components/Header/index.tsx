@@ -4,7 +4,9 @@ import * as St from "./styles";
 import pokestore from "../../assets/Images/pokestore.png";
 import Input from "../Input";
 import ItemsAmount from "../ItemsAmount";
+import { usePokemon } from "../../hooks/AppProvider";
 const Header: React.FC = () => {
+  const { itemsCount } = usePokemon();
   return (
     <St.Container>
       <St.Logo src={pokestore} />
@@ -12,7 +14,7 @@ const Header: React.FC = () => {
         <Input />
         <St.CartShoppingIconContainer>
           <St.CartShoppingIcon />
-          <ItemsAmount amount={999} />
+          <ItemsAmount amount={itemsCount} />
         </St.CartShoppingIconContainer>
       </St.InputSearchContainer>
     </St.Container>
