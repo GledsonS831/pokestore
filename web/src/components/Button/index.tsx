@@ -7,22 +7,20 @@ interface ButtonProps {
   inputValue: string;
 }
 
-interface NameContextProps {
-  name: string;
-}
-
 const Button: React.FC<ButtonProps> = ({ inputValue }) => {
-  const [name, setName] = useState<string>("");
-  const { pokemonName, setPokemonName } = usePokemon();
+  const { setPokemonName } = usePokemon();
 
   async function handlePokemonName(): Promise<void> {
-    await api.get(inputValue).then((data) => {
-      if (inputValue.length === 0) {
-        setPokemonName("");
-      } else {
-        setPokemonName(data.data.name);
-      }
-    }).catch(() => alert("Incorrect Name"));
+    await api
+      .get(inputValue)
+      .then((data) => {
+        if (inputValue.length === 0) {
+          setPokemonName("");
+        } else {
+          setPokemonName(data.data.name);
+        }
+      })
+      .catch(() => alert("Incorrect Name"));
   }
 
   return (
