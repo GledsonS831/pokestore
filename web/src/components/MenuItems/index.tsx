@@ -18,7 +18,7 @@ const MenuItems: React.FC = () => {
   }, []);
 
   function handlePokemonList(): JSX.Element | JSX.Element[] {
-    console.log(pokemonName);
+    
     return pokemonName.length === 0 ? (
       listPokemon.map((item) => <Product pokemonName={item} />)
     ) : (

@@ -17,10 +17,12 @@ const Button: React.FC<ButtonProps> = ({ inputValue }) => {
 
   async function handlePokemonName(): Promise<void> {
     await api.get(inputValue).then((data) => {
-      setPokemonName(
-        typeof data.data.name === "undefined" ? "" : data.data.name
-      );
-    });
+      if (inputValue.length === 0) {
+        setPokemonName("");
+      } else {
+        setPokemonName(data.data.name);
+      }
+    }).catch(() => alert("Incorrect Name"));
   }
 
   return (

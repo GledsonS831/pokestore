@@ -14,7 +14,9 @@ const Input: React.FC = () => {
           setValueInput(data.target.value);
         }}
       />
-      <Button inputValue={valueInput} />
+      <Button
+        inputValue={valueInput}
+      />
     </St.Container>
   );
 };
