@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect } from "react";
 import Product from "../Product/";
 import api from "../../services/api";
 import { usePokemon } from "../../hooks/AppProvider";
@@ -18,7 +18,6 @@ const MenuItems: React.FC = () => {
   }, []);
 
   function handlePokemonList(): JSX.Element | JSX.Element[] {
-    
     return pokemonName.length === 0 ? (
       listPokemon.map((item) => <Product pokemonName={item} />)
     ) : (

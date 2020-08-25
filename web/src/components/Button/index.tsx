@@ -1,4 +1,4 @@
-import React, { useState, createContext, useContext } from "react";
+import React from "react";
 import api from "../../services/api";
 import { usePokemon } from "../../hooks/AppProvider";
 import * as St from "./styles";
@@ -20,7 +20,7 @@ const Button: React.FC<ButtonProps> = ({ inputValue }) => {
           setPokemonName(data.data.name);
         }
       })
-      .catch(() => alert("Incorrect Name"));
+      .catch(() => alert("Incorr66ect Name"));
   }
 
   return (
