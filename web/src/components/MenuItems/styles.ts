@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   grid-area: area2;
   flex-direction: column;
-  width: 1137px;
+  width: 900px;
 `;
 
 export const Description = styled.div`
