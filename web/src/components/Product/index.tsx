@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { usePokemon } from "../../hooks/AppProvider";
+import { useCart } from "../../hooks/CartProvider";
 import * as St from "./styles";
 
 import api from "../../services/api";
@@ -20,6 +21,20 @@ const Product: React.FC<ProductProps> = ({ pokemonName }) => {
   const [price, setPrice] = useState<number>(0);
   const [priceDivided, setPriceDivided] = useState<number>(0);
   const { itemsCount, setItemsCount } = usePokemon();
+  const { productList, setProductList } = useCart();
+
+  function handleCart(): void {
+    setProductList([
+      ...productList,
+      {
+        Name: pokemonName,
+        Image: image,
+        Price: price,
+        PriceDivided: priceDivided,
+      },
+    ]);
+  }
+
   useEffect(() => {
     api.get(pokemonName).then((data) => {
       setImage(data.data.sprites.front_default);
@@ -55,7 +70,12 @@ const Product: React.FC<ProductProps> = ({ pokemonName }) => {
         </St.PriceContent>
 
         <St.BuyContainer>
-          <St.Button onClick={() => setItemsCount(itemsCount + 1)}>
+          <St.Button
+            onClick={() => {
+              handleCart();
+              setItemsCount(itemsCount + 1);
+            }}
+          >
             <St.ButtonIcon />
 
             <St.ButtonText>COMPRAR</St.ButtonText>

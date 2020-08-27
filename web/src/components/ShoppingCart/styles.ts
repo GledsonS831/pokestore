@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   margin-top: 54px;
   width: 470px;
-  height: 361px;
+  height: 451px;
   border-radius: 5px;
   border: 2px solid var(--color-shadow);
 `;
@@ -28,17 +28,8 @@ export const HeaderText = styled.p`
 `;
 
 export const ItemsContainer = styled.div`
-  height: 257px;
-  overflow-x: auto;
-  white-space: nowrap;
-`;
-
-export const ItemCart = styled.div`
-  width: 392px;
-  height: 90px;
-  border: 2px solid var(--color-main);
-  margin-left: 39px;
-  margin-bottom: 36px;
+  height: 383px;
+  overflow-y: auto;
 `;
 
 export const CheckOutContainer = styled.div`
