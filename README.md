@@ -1,6 +1,6 @@
 
 <p align="center">    
- <img src="https://raw.githubusercontent.com/gledson-ss/gledson-ss/master/web/src/assets/Images/pokestore.gif" width=600px height=400px />    
+ <img src="./web/src/assets/Images/pokestore_demo.gif" width=600px height=400px />    
 </p>
 
 <h1 align="center">
