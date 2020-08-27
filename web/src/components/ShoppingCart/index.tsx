@@ -1,14 +1,28 @@
 import React from "react";
 import ItemCart from "../../components/ItemCart";
 import { useCart } from "../../hooks/CartProvider";
+import { usePokemon } from "../../hooks/AppProvider";
 import * as St from "./styles";
 
 const ShoppingCart: React.FC = () => {
-  const { productList } = useCart();
+  const { productList, setProductList } = useCart();
+  const { setItemsCount } = usePokemon();
   return (
     <St.Container>
       <St.Header>
-        <St.HeaderText>Produtos adicionados ao carrinho</St.HeaderText>
+        <St.ContainerText>
+          <St.HeaderText>Produtos adicionados ao carrinho</St.HeaderText>
+        </St.ContainerText>
+        <St.ContainerButton>
+          <St.ClearButton
+            onClick={() => {
+              setProductList([]);
+              setItemsCount(0);
+            }}
+          >
+            <St.TextButton>CLEAR</St.TextButton>
+          </St.ClearButton>
+        </St.ContainerButton>
       </St.Header>
       <St.ItemsContainer>
         {productList.length === 0
