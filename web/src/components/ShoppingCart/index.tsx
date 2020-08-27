@@ -5,16 +5,6 @@ import * as St from "./styles";
 
 const ShoppingCart: React.FC = () => {
   const { productList } = useCart();
-  /* function handleProductList() {
-    productList.map((item) => {
-      <ItemCart
-        Name={item.Name}
-        Image={item.Image}
-        Price={item.Price}
-        PriceDivided={item.PriceDivided}
-      />;
-    });
-  } */
   return (
     <St.Container>
       <St.Header>
