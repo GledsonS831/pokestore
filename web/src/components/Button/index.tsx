@@ -20,7 +20,10 @@ const Button: React.FC<ButtonProps> = ({ inputValue }) => {
           setPokemonName(data.data.name);
         }
       })
-      .catch(() => alert("Incorrect Name"));
+      .catch(() => {
+        var num = Number(inputValue);
+        num ? alert("Incorrect ID") : alert("Incorrect Name");
+      });
   }
 
   return (
