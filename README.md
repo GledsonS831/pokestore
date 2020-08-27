@@ -13,7 +13,7 @@ Pokestore
 	 <img src="https://img.shields.io/badge/always-LEARNING-RED.svg"/>
 	 <img src="https://img.shields.io/github/stars/GledsonS831/twitter-resonsive-react?style=social"/>    
 	 <img src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FgledsonDev"/>
-	 <a href="https://gracious-heisenberg-0b8a81.netlify.app/" target="blank">
+	 <a href="https://pokestore-shopping.netlify.app/" target="_blank">
 	 	<img src="https://api.netlify.com/api/v1/badges/a6aa6559-46ee-48dd-84d9-e5fef9989b1b/deploy-status" />
 	 </a>
  </p>
