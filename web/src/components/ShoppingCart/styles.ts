@@ -28,7 +28,7 @@ export const HeaderText = styled.p`
 `;
 
 export const ItemsContainer = styled.div`
-  height: 383px;
+  height: 348px;
   overflow-y: auto;
 `;
 
