@@ -9,7 +9,7 @@ const App: React.FC = () => {
   return (
     <AppProvider>
       <CartProvider>
-        <Routes />;
+        <Routes />
       </CartProvider>
     </AppProvider>
   );

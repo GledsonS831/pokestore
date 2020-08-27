@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 export const Container = styled.div`
   margin-top: 54px;
   width: 470px;
@@ -90,4 +90,8 @@ export const TextCheckout = styled.p`
   }
   cursor: pointer;
   font-family: PTSerif;
+`;
+
+export const LinkPage = styled(Link)`
+  text-decoration: none;
 `;

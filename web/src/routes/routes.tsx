@@ -1,15 +1,17 @@
-import React from 'react';
+import React from "react";
 
-import {BrowserRouter} from 'react-router-dom';
+import { BrowserRouter } from "react-router-dom";
 
-import HomeRoute from './Home';
+import HomeRoute from "./Home";
+import ThanksRoute from "./Thanks";
 
 const Routes = () => {
-    return (
-        <BrowserRouter>
-            <HomeRoute />
-        </BrowserRouter>
-    )
-}
+  return (
+    <BrowserRouter>
+      <HomeRoute />
+      <ThanksRoute />
+    </BrowserRouter>
+  );
+};
 
 export default Routes;

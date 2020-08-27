@@ -3,7 +3,7 @@ import { Route } from "react-router-dom";
 import Home from "../../pages/Home";
 
 const HomeRoute = () => {
-  return <Route component={Home} path="/" exact />;
+  return <Route name="Home" path="/" exact component={Home} />;
 };
 
 export default HomeRoute;

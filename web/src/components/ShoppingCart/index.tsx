@@ -2,11 +2,13 @@ import React from "react";
 import ItemCart from "../../components/ItemCart";
 import { useCart } from "../../hooks/CartProvider";
 import { usePokemon } from "../../hooks/AppProvider";
+
 import * as St from "./styles";
 
 const ShoppingCart: React.FC = () => {
   const { productList, setProductList } = useCart();
   const { setItemsCount } = usePokemon();
+
   return (
     <St.Container>
       <St.Header>
@@ -38,9 +40,11 @@ const ShoppingCart: React.FC = () => {
               );
             })}
       </St.ItemsContainer>
-      <St.CheckOutContainer>
-        <St.TextCheckout>Finalizar Compra</St.TextCheckout>
-      </St.CheckOutContainer>
+      <St.LinkPage to="/thanks">
+        <St.CheckOutContainer>
+          <St.TextCheckout>Finalizar Compra</St.TextCheckout>
+        </St.CheckOutContainer>
+      </St.LinkPage>
     </St.Container>
   );
 };
